@@ -141,7 +141,7 @@ function Hero() {
             alignItems: "center"
           }}>
             <img
-                src="/profile.png"
+                src={`${process.env.PUBLIC_URL}/profile.png`}
                 alt="Abhijeet Pathak"
                 style={{
                 width: "250px",
