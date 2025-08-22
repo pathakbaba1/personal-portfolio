@@ -7,7 +7,7 @@ function Projects() {
           color: "#ffffff", 
           marginBottom: "1rem" 
       }}>
-          Work
+          Projects
       </h2>
       <p style={{
           fontSize: "1.2rem",
@@ -26,7 +26,109 @@ function Projects() {
           maxWidth: "1200px",
           margin: "0 auto"
       }}>
-        {/* Project 1 - Wikipedia Search Engine */}
+        {/* Project 1 - TCP Chat System */}
+        <div style={{
+            backgroundColor: "#1f2937",
+            borderRadius: "12px",
+            overflow: "hidden",
+            border: "1px solid #374151",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
+            display: "flex",
+            flexDirection: "row",
+            minHeight: "300px"
+        }}>
+          {/* Project Image */}
+          <div style={{
+              width: "50%",
+              backgroundColor: "#374151",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative"
+          }}>
+            <div style={{
+                width: "80%",
+                height: "80%",
+                backgroundColor: "#4b5563",
+                borderRadius: "8px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "#9ca3af",
+                fontSize: "0.9rem",
+                textAlign: "center"
+            }}>
+              💬 TCP Chat System
+            </div>
+          </div>
+          
+          {/* Project Content */}
+          <div style={{
+              width: "50%",
+              padding: "2rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              textAlign: "left"
+          }}>
+            <div>
+              <h3 style={{
+                  fontSize: "1.5rem",
+                  fontWeight: "600",
+                  color: "#ffffff",
+                  marginBottom: "1rem"
+              }}>
+                   TCP Chat System
+              </h3>
+              <p style={{
+                  fontSize: "1rem",
+                  color: "#d1d5db",
+                  lineHeight: "1.6",
+                  marginBottom: "1.5rem"
+              }}>
+                   Engineered multi-client TCP server supporting 5+ concurrent connections via Berkeley sockets and select() multiplexing. Implemented real-time messaging with client blocking, offline message buffering, and custom communication protocol with event-driven architecture.
+              </p>
+            </div>
+            
+            {/* Technology Tags */}
+            <div>
+              <div style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "0.5rem",
+                  marginBottom: "1rem"
+              }}>
+                {["C++", "Socket Programming", "Docker", "TCP/IP", "Berkeley Sockets", "Multiplexing"].map((tech, index) => (
+                  <span key={index} style={{
+                      backgroundColor: "#374151",
+                      color: "#d1d5db",
+                      padding: "0.25rem 0.75rem",
+                      borderRadius: "12px",
+                      fontSize: "0.85rem",
+                      fontWeight: "500"
+                  }}>
+                      {tech}
+                  </span>
+                ))}
+              </div>
+              
+              {/* External Link */}
+              <a href="https://github.com/pathakbaba1/tcp-chat-system" target="_blank" rel="noopener noreferrer" style={{
+                  color: "#60a5fa",
+                  textDecoration: "none",
+                  fontSize: "1rem",
+                  fontWeight: "500",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem"
+              }}>
+                  <span>↗</span> View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 2 - Wikipedia Search Engine */}
         <div style={{
             backgroundColor: "#1f2937",
             borderRadius: "12px",
@@ -128,8 +230,8 @@ function Projects() {
            </div>
          </div>
 
-         {/* Project 2 - Price Tracker */}
-         <div style={{
+                      {/* Project 3 - Price Tracker */}
+             <div style={{
              backgroundColor: "#1f2937",
              borderRadius: "12px",
              overflow: "hidden",
@@ -230,8 +332,8 @@ function Projects() {
            </div>
          </div>
 
-         {/* Project 3 - Movie Ticket Booking */}
-         <div style={{
+                      {/* Project 4 - Movie Ticket Booking */}
+             <div style={{
              backgroundColor: "#1f2937",
              borderRadius: "12px",
              overflow: "hidden",
